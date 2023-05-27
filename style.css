@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap');
+
+/*
+font-family: 'Roboto Flex', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 9000px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(Imagenes/BG.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+}
+
+main {
+    background: rgba(125, 147, 147, 0.34);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 50;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 1;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: #266371;
+
+}
+
+.icons {
+    display: flex;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: #266371;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+.header-txt {
+    width: 180%;
+}
+
+.header-txt h1 {
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #266371;
+    margin-bottom: 30px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.header-txt p {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #099fa6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+.btn-1:hover {
+    background-color: #266371;
+}
+
+.imagenes {
+    width: 800px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+}
+
+.swiper {
+    width: 25%;
+    height: 25%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-slide h3 {
+    position:absolute;
+    left: 2px;
+    bottom: 70px;
+    color: #FFFFFF;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 170%;
+    height: 170%;
+    object-fit: cover;
+    border-radius: 0px;
+}
+
+.rows {
+    width: 150px;
+    position: absolute;
+    right: 450px;
+    bottom: 70px;
+}
+
+.swiper-button-prev {
+    height: 52px;
+    width: 52px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-next {
+    height: 52px;
+    width: 52px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+.swiper-button-prev::after {
+font-size: 25px;
+color: #FFFFFF;
+}
+
+.swiper-button-next::after {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+
+    }
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #3f3f3f48;
+        backdrop-filter: blur(5px);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .header {
+        padding: 90px 10px 10px 10px;
+        align-items: self-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .header-txt h1 {
+        margin-bottom: 100px;
+    }
+
+    .imagenes {
+        position: initial;
+        width: 300px;
+        height: 300px;
+    }
+
+    .rows{
+        display: none;
+    }
+} 
